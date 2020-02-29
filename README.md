@@ -12,7 +12,7 @@ other cases, a splay tree might outperform a shuffle tree.
 
 If you haven't heard of shuffle trees, don't dispair.  I developed the data structure, but there has never been a paper on them.  
 
-Like splay trees, they can be implemented around a traversal function.  Like scapegoat trees, they use a counter to detect imbalance in the tree.  When a point of imbalance is identified (the counter is zero) then a single rotation is performed to improve balance.
+Like splay trees, they can be implemented around a traversal function.  Like scapegoat trees, they use a counter to detect imbalance in the tree.  When a point of imbalance is identified (the counter is zero) then a single rotation is performed to improve balance.  Shuffle trees do not require balancing information or parent pointers to be stored on nodes; though parent pointers are used below to simplify the presentation.
 
 
     // returns node with key k,
